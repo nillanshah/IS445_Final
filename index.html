@@ -55,12 +55,15 @@
             flex: 1 1 auto;
         }
         .input-box-2{
-            width:450px;
+            width:400px;
             flex: 1 1 auto;
             margin-right: 10px;
         }
         
         .message{
+        }
+        .input-box{
+            width: 100%;
         }
         </style>
 
@@ -83,26 +86,23 @@
             <div class = "input-box-1" id = "input-box-1">
                 <label for="num1">Number 1: </label>
                 <br>
-                <input type="number" id="num1" name="num1">
+                <input class = "input-box" type="text" id="num1" name="num1">
             </div>
 
             <div class = "input-box-2" id = "input-box-2">
                 <label for="num2">Number 2: </label>
                 <br>
-                <input type="number" id="num2" name="num2">
+                <input class = "input-box" type="text" id="num2" name="num2">
             </div>
             <br>
     </div>
 
 
     <input class = "btn btn-outline-warning" type = "button" id = "submit" value="SUBMIT">
+    <h1 class = "message" id = "message"></h1>
 
 
 
     <script src="index.js"></script>
-
-
-    
-
     
 </html>
