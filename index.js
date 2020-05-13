@@ -24,6 +24,11 @@ function driver(){
 
     document.getElementById("message").innerHTML = "<p style = 'color: red;'>" + message_num1 + "<br>" + message_num2 + "</p>";
 
+
+    if(message_num1.length == 0 & message_num2.length == 0){
+        
+    }
+
 }
 
 document.getElementById("submit").addEventListener("click", driver);
