@@ -23,10 +23,28 @@ function driver(){
     }
 
     document.getElementById("message").innerHTML = "<p style = 'color: red;'>" + message_num1 + "<br>" + message_num2 + "</p>";
+    var success_message = "";
+    evens = [];
 
+    if (message_num1.length == 0 & message_num2.length == 0){
 
-    if(message_num1.length == 0 & message_num2.length == 0){
+        if(num1 > num2){
+            for (i = num2; i <= num1; i++){
+                if (i % 2 == 0){
+                    evens.push(i);
+                }
+            }
+        } else {
+            for (i = num1;  i <= num2; i++){
+                if (i % 2 == 0){
+                    evens.push(i);
+                }
+            }
+        }
+
+        var size = "<p class = 'text-info'>There are " + evens.length + " even numbers.</p>" 
         
+        document.getElementById("message").innerHTML = size + "<p class = 'text-success'>" + evens+ "</p>";
     }
 
 }
