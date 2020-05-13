@@ -17,23 +17,28 @@
 
         }
 
+        .btn-outline-warning{
+            border-radius: 5px;
+            border-width: 1px;
+            margin-left: 5px;
+        }
 
-        .input-boxes{
+        .text-success{
             display: flex;
             flex-wrap: wrap;
             margin-top: 10px;
+            padding-left: 5px;
         
         }
 
         .header-text{
-            padding-top: 3pc;
-            font-family: Arial, Helvetica, sans-serif; 
             color: text-danger; 
             font-size:150%;
 
         }
 
         .bg-info{ 
+            padding-top: 5em;
             height: 300px; 
             text-align: center; 
             border-radius: 10px;
@@ -41,7 +46,6 @@
         
         label{
             font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .input-box-1{
@@ -57,7 +61,6 @@
         }
         
         .message{
-            font-family: Arial, Helvetica, sans-serif;
         }
         </style>
 
@@ -70,13 +73,13 @@
 
 </head>
     <div class = "bg-info">
-        <div >
-            <h1 class = "text-danger">Homework #5</h1>
-            <h2 class = "text-light"> Find all prime numbers between two numbers</h2>
+        <div>
+            <h1 class = "text-danger">Final</h1>
+            <h2 class = "text-light"> Find all even numbers between two numbers</h2>
         </div>  
     </div>
 
-    <div class = "input-boxes">
+    <div class = "text-success">
             <div class = "input-box-1" id = "input-box-1">
                 <label for="num1">Number 1: </label>
                 <br>
@@ -90,7 +93,9 @@
             </div>
             <br>
     </div>
-    <input type = "submit" id = "submit" value="SUBMIT">
+
+
+    <input class = "btn btn-outline-warning" type = "button" id = "submit" value="SUBMIT">
 
 
 
